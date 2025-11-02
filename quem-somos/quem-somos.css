@@ -1,0 +1,820 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: #f4f4f4;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+
+/* Estilos para cabçalho */
+
+.navbar-container {
+  background-color: #5d1aaa;
+  height: 100px;
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-top: 25px;
+  display: block;
+}
+
+h1 {
+  color: #ffdd19;
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+
+}
+
+.navbar-title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.navbar-title-text {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slogan {
+  font-size: 20px;
+  color: #ffffff;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.navbar-title-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 150px;
+}
+
+.abas-principais-1,
+.abas-principais {
+  margin-top: 18px;
+  padding: 8px 16px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 6px;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+  /* Adicione aqui */
+}
+
+.abas-principais:hover {
+  background-color: #7f2dcb;
+  color: #fff;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.abas-principais-1 {
+  color: #7f2dcb;
+  background-color: #feed8a;
+}
+
+/* Estilos para os ícones de contato */
+
+.navbar-itens {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+.navbar-itens li {
+  list-style: none;
+}
+
+.navbar-itens a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar-itens i {
+  margin-right: 8px;
+  font-size: 30px;
+  color: #ffdd19;
+  transition: 0.5;
+  cursor: pointer;
+}
+
+.navbar-itens i:hover {
+  color: #c7ab0f;
+}
+
+/* === MENU HAMBÚRGUER === */
+.menu-toggle {
+  display: none;
+  /* Escondido em telas grandes */
+  background: none;
+  border: none;
+  color: #3e1270;
+  background-color: #ccaaf2;
+  border: 2px solid #c7ab0f;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 2px;
+  cursor: pointer;
+  align-items: flex-end;
+  gap: 2px;
+  margin-left: 10px;
+  width: 40px;
+}
+
+
+/* Estilos para o conteúdo principal */
+
+.titulo-sbafibro {
+  text-align: center;
+  color: #4f188f;
+  text-shadow: 2px 2px 4px #c9c7c7;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.fibro-texto {
+  font-size: 17px;
+  margin: 10px 30px;
+  padding: 10px 40px;
+  text-align: justify;
+}
+
+.highlighted-words {
+  color: #6b2c98;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.foto-sbafibro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.foto-grupo {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 250px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a seção de vídeo */
+
+.container-video {
+  background-color: #ecdefb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.introduçao-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Alinha conteúdo à esquerda */
+  justify-content: flex-start;
+  max-width: 500px;
+  height: 100%;
+  padding-left: 80px;
+}
+
+.estudantes {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #3e1270;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.sbafibro {
+  background-color: #ccaaf2;
+  border-radius: 50px;
+  padding: 5px 15px;
+  border: 1px solid #c7ab0f;
+}
+
+.introduçao {
+  text-align: left;
+  /* Alinha texto à esquerda */
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #000;
+  text-align: justify;
+}
+
+.foto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* Alinha conteúdo à esquerda */
+  justify-content: flex-end;
+  max-width: 700px;
+}
+
+.video-sbafibro {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 100px 20px 20px
+}
+
+/* Estilos para a seção Junte-se a Nós */
+.join-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  /* responsivo: empilha em telas pequenas */
+}
+
+.join-left {
+  flex: 0 0 260px;
+  /* largura fixa do bloco esquerdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.join-left .highlighted-words {
+  margin: 0 0 12px 0;
+  text-align: left;
+}
+
+.join-logo {
+  max-width: 200px;
+  height: auto;
+  margin-top: 8px;
+  border-radius: 8px;
+  /* opcional */
+}
+
+.join-right {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* reduzido o espaço entre elementos */
+  align-items: flex-start;
+  /* alinha items à esquerda */
+}
+
+.fibro-texto {
+  text-align: justify;
+  line-height: 1.6;
+  margin: 0;
+  /* remove margens */
+}
+
+.comunidade-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  /* remove margens */
+  padding: 0;
+  /* remove padding */
+}
+
+.comunidade-whatsapp a {
+  color: #3e1270;
+  background-color: #ccaaf2;
+  border: 2px solid #c7ab0f;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 20px;
+  /* pequeno espaço após a palavra "clicando" */
+}
+
+
+/* Estilos para a seção de comentários */
+
+.container-comentarios-total {
+  background-color: #ecdefb;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: 400px;
+  margin-top: 40px;
+}
+
+.texto-comentarios {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.comment-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 50%;
+}
+
+.comment-section label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.comment-section textarea {
+  width: 100%;
+  height: 280px;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 1.4;
+  border: 1px solid #4f188f;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+
+
+/* Estilos para o rodapé */
+hr {
+  border: none;
+  background-color: #9f9e9e;
+  height: 0.5px;
+  margin-top: 40px;
+}
+
+.footer {
+  background-color: #5d1aaa;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* organiza os elementos verticalmente */
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* espaço entre h3 e p */
+}
+
+.footer1 {
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+
+/* CELULAR - 600px e abaixo */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .navbar-title-text {
+    display: none;
+  }
+
+  .navbar-title-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navbar-title-buttons.active {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    background-color: #5d1aaa;
+    padding: 10px;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+  }
+
+  .navbar-title-buttons,
+  .abas-principais,
+  .abas-principais-1 {
+    width: 100%;
+    text-align: left;
+    /* ou center se preferir */
+    padding: 10px 12px;
+    border-radius: 6px;
+  }
+
+  .navbar-container {
+    flex-direction: row;
+    height: 50px;
+    padding: 10px;
+    position: sticky;
+  }
+
+  .logo {
+    height: 60px;
+    width: auto;
+    margin-top: 20px;
+    display: block;
+  }
+
+  .navbar-title {
+    flex-direction: row;
+    padding: 0 10px;
+  }
+
+  .navbar-title-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .navbar-itens {
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .navbar-itens i {
+    font-size: 24px;
+  }
+
+  /* fim do cabeçalho */
+
+  .foto-grupo{
+    height: 200px;
+  }
+
+  .container-video {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .estudantes {
+    font-size: 24px;
+  }
+
+  .introduçao-container {
+    align-items: center;
+    padding-left: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .introduçao {
+    font-size: 18px;
+  }
+
+  .video-sbafibro { 
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .join-left{
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-comentarios-total {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .texto-comentarios, .comment-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* TABLETS - 601px até 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+  .navbar-container {
+    height: 60px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    height: 70px;
+    margin-top: 20px;
+  }
+
+  .navbar-title {
+    flex-direction: row;
+    padding: 0 10px;
+  }
+
+  .navbar-title-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navbar-title-buttons.active {
+    display: flex;
+    position: absolute;
+    top: 90px;
+    right: 15px;
+    background-color: #5d1aaa;
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+  }
+
+  .abas-principais,
+  .abas-principais-1 {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 17px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+
+  }
+
+  .navbar-title-text {
+    display: none;
+  }
+
+  .navbar-itens {
+    gap: 15px;
+  }
+
+  .navbar-itens i {
+    font-size: 28px;
+  }
+
+  /* fim do cabeçalho */
+
+    .container-video {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .estudantes {
+    font-size: 24px;
+  }
+
+  .introduçao-container {
+    align-items: center;
+    padding-left: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .introduçao {
+    font-size: 18px;
+  }
+
+  .video-sbafibro { 
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .join-left{
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-comentarios-total {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .texto-comentarios, .comment-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* MINI LAPTOPS - 769px até 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  .navbar-container {
+    height: 95px;
+  }
+
+  .logo {
+    height: 85px;
+  }
+
+  h1 {
+    font-size: 15px;
+  }
+
+  .navbar-title-buttons {
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+
+  .abas-principais,
+  .abas-principais-1 {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+
+  .navbar-itens i {
+    font-size: 28px;
+  }
+
+  /* fim do cabeçalho */
+
+    .container-video {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .estudantes {
+    font-size: 24px;
+  }
+
+  .introduçao-container {
+    align-items: center;
+    padding-left: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .introduçao {
+    font-size: 18px;
+  }
+
+  .video-sbafibro { 
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .join-left{
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-comentarios-total {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .texto-comentarios, .comment-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
+
+/* LAPTOPS E DESKTOP - 993px e acima */
+@media (min-width: 993px) and (max-width: 1280px) {
+  .navbar-container {
+    height: 100px;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 17px;
+  }
+
+  .navbar-title-buttons {
+    gap: 50px;
+    margin-bottom: 16px;
+  }
+
+  .abas-principais,
+  .abas-principais-1 {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+
+  .navbar-itens i {
+    font-size: 30px;
+  }
+
+  /* fim do cabeçalho */
+
+    .container-video {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .estudantes {
+    font-size: 30px;
+  }
+
+  .introduçao-container {
+    align-items: center;
+    padding-left: 20px;
+    max-width: 100%;
+    margin-bottom: 60px;
+    margin-right: 60px;
+  }
+
+  .introduçao {
+    font-size: 20px;
+  }
+
+  .video-sbafibro { 
+    margin: auto;
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .join-left{
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-comentarios-total {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .texto-comentarios, .comment-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+}
